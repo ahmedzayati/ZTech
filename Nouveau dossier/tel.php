@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
    <head>
-    <meta charset="utf-8">
-      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="../style_daw.css" />
-      <link href="../themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="css.css" />
+      <link href="themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
       <title>site1</title>
-
+      <style >
+         /*img{
+         border: 1px solid black;
+         }*/
+         li{
+         list-style-type: none;
+         }
+         .span3{
+         background-color: white;padding: 8px;border-radius: 6px;margin-bottom: 20px;
+         }
+         @media (max-width: 575.98px) {
+         ul{
+         padding-left: 0px;
+         }
+         }
+      </style>
    </head>
    <body style="background: url('back.jpg') no-repeat fixed; background-size: 100% 100%;">
-      <?php include("header.php"); ?>
-      <br>
-      <div class="container" ">
+      <?php include("entete.php"); ?>
+      <br> <br>
+      <div class="container" style="width: 100%;">
          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -52,31 +67,29 @@
             <span class="sr-only">Next</span>
             </a>
          </div>
-         <br>
          <center>
             <div class="row">
-               <div class="col-md-9  " style="padding: 0px;" >
+               <div class="col-sm-9" >
                   <center>
-                     <h1 class="btn btn-primary">nouvel arrivage</h1>
+                     <h1>nouvel arrivage</h1>
                   </center>
-                  <ul class="thumbnails " >
-                     <?php  
+                  <ul class="thumbnails" >
+                     <?php
                         $bdd = new PDO('mysql:host=localhost;dbname=projet_daw;charset=utf8', 'root', '');
-                        $query = "SELECT nom, price,imagename,marque,description FROM produit order by id DESC limit 9 ";
+                        $query = "SELECT nom, price,imagename,marque FROM produit where categorie='".$_GET['categorie']."' order by id DESC limit 9 ";
                          $result = $bdd->query($query); 
                          while($row=$result->fetch())
                         {
                         ?>
                      <li class="span3 taille" style="margin-left: 3px;" >
                         <div class="thumbnail" >
-                           <a  href="product_details.html"><img  class=" img-thumbnail" <?php echo 'src="data:image/jpeg;base64,'.base64_encode($row['imagename']).'"' ?> alt=""/></a>
+                           <a  href="product_details.html"><img  class="img-thumbnail" <?php echo 'src="data:image/jpeg;base64,'.base64_encode($row['imagename']).'"' ?> alt=""/></a>
                            <div class="caption">
                               <h5><?php  echo $row['nom']; ?></h5>
                               <p> 
                                  <?php  echo $row['marque']; ?>
                               </p>
-                              <button class="btn btn-primary" ><?php  echo $row['price']; ?>$</button>
-                              <h4 style="text-align:center"><a class="btn" ><?php  echo $row['description']; ?></a></h4> 
+                              <h4 style="text-align:center"><a class="btn" href="product_details.html"> description</a> <button class="btn btn-primary" href="#"><?php  echo $row['price']; ?>$</button></h4>
                            </div>
                         </div>
                      </li>
@@ -86,7 +99,7 @@
                         ?>
                   </ul>
                </div>
-               <div class="col-md-3  ">
+               <div class="col-sm-3  ">
                   <center>
                      <h1>pub</h1>
                   </center>
@@ -103,8 +116,10 @@
    </body>
    <script>
       var modal1 = document.getElementById("id03");
-      var modal5 = document.getElementById("id02");
-      var modal = document.getElementById("id04");
+      var modal2 = document.getElementById("id01");
+      // Get the modal
+      var modal = document.getElementById("id02");
+      // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
         if (event.target == modal) {
           modal.style.display = "none";
@@ -112,9 +127,8 @@
         if (event.target == modal1) {
           modal1.style.display = "none";
         }
-       
-         if (event.target == modal5) {
-          modal5.style.display = "none";
+        if (event.target == modal2) {
+          modal2.style.display = "none";
         }
       }
    </script>

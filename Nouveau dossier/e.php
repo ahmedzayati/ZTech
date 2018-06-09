@@ -2,10 +2,10 @@
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="accueil.php" style="color: #007bff;">ZAYATECH</a>
+          <a class="navbar-brand" href="#">LOGO</a>
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="home_page.php">Home </a>
+              <a class="nav-link" href="acc.php">Home </a>
             </li>
             
            
@@ -21,11 +21,11 @@
                   <div class="form-row" >
                     <div class="form-group col-md-6" >
                       <label>Pseudo</label>
-                      <input type="text" class="form-control"  placeholder="pseudo" name="pseudo" required maxlength="30">
+                      <input type="text" class="form-control"  placeholder="pseudo" name="pseudo">
                     </div>
                     <div class="form-group col-md-6" >
                       <label >Password</label>
-                      <input type="password" class="form-control"  placeholder="Password"  name="pass" required>
+                      <input type="password" class="form-control"  placeholder="Password"  name="pass">
                     </div>
                   </div>
                   
@@ -81,7 +81,7 @@
                   <div class="form-row" >
                     <div class="form-group col-md-6" >
                     <label for="email" >Email</label>
-                    <input type="email" name="email1" placeholder="your email" required class="form-control" required>  
+                    <input type="email" name="email1" placeholder="your email" required class="form-control">  
                   </div>
                  
                 
@@ -98,7 +98,7 @@
               <div class="form-row" >
                 <div class="form-group col-md-12" >
                   <label for="subject" >Subject</label>
-                  <textarea id="subject" class="form-control" placeholder="Write something.." name="message" style="height:120px" required></textarea>
+                  <textarea id="subject" class="form-control" placeholder="Write something.." name="message" style="height:120px"></textarea>
                 </div>
               </div>
                   <input type="submit" value="Submit" class="btn-primary">
@@ -111,7 +111,7 @@
                 <span onclick="document.getElementById('id04').style.display='none'" >&times;</span>
                 <form class="modal-content animate" action="envoyer.php" method="POST" style="padding: 10px;">
                   <div class="form-row" >
-                    <p> Notre site vous offre différents produits informatiques de trés bonne qualité  </p>
+                    <p>Notre site vous donne la possibilité de'acheter des composants informatiques</p>
                 </form>
               </div>
             </li>
@@ -128,22 +128,19 @@
     <ul class="navbar-nav">
       <li class="nav-item dropdown active">
       <a class="nav-link dropdown-toggle " href="#" id="navbardrop" data-toggle="dropdown">
-        Ordinateurs
+        Informatique
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="show_articales.php?categorie=ordinateur portable">ordinateurs portables</a>
-        <a class="dropdown-item" href="show_articales.php?categorie=ordinateur bureau">ordinateurs bureaux</a>
-        <a class="dropdown-item" href="show_articales.php?categorie=composants informatique">composants informatiques</a>
+        <a class="dropdown-item" href="tel.php?categorie=ordinateur portable">ordinateurs portables</a>
+        <a class="dropdown-item" href="tel.php?categorie=ordinateur bureau">ordinateurs bureaux</a>
+        <a class="dropdown-item" href="tel.php?categorie=composants informatique">composants informatiques</a>
       </div>
-     </li>
-     <li class="nav-item active">
-        <a class="nav-link" href="show_articales.php?categorie=composants informatique">composants informatiques</a>
+    </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="tel.php?categorie=telephone">Téléphone</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="show_articales.php?categorie=telephone">Téléphone</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="show_articales.php?categorie=Camera">Camèra</a>
+        <a class="nav-link" href="#">Impression</a>
       </li>    
     </ul>
   </div>  
