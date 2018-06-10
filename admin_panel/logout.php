@@ -1,5 +1,5 @@
 <?php
 session_start(); 
 session_destroy(); 
-header("location:accueil.php"); 
+header("location:../user_panel/home_page.php"); 
 ?>

@@ -20,5 +20,5 @@ $insert_image="INSERT INTO produit (`imagename`, `imagetmp`,`price`,`categorie`,
 $rep=$bdd->query($insert_image);
 $req="select * from produit";
 $repp=$bdd->query($req);
-header("location:accueil.php")
+header("location:../user_panel/home_page.php")
 ?>

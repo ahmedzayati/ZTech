@@ -2,19 +2,19 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="style_daw.css" />
-      <link href="themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="../style_daw.css" />
+      <link href="../themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
       <title>site1</title>
 
    </head>
    <body style="background: url('back.jpg') no-repeat fixed; background-size: 100% 100%;">
-      <?php include("entete.php"); ?>
+      <?php include("header.php"); ?>
       <br> <br>
       <div class="container" style="width: 100%;">
          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

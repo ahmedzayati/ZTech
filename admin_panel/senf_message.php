@@ -7,5 +7,5 @@
 	$date=date("Y-m-d h:i:sa");
 	$req="INSERT INTO message (`email`,`country`,`message`,`date`) values ('$email','$country','$message','$date')";
 	$rep=$bdd->query($req);
-	header("Location:acc.php");
+	header("Location:../user_panel/home_page.php");
 	?>

@@ -13,7 +13,7 @@ if(isset($_POST['pass'])){
     {
     	session_start(); 
         $_SESSION['nom']=$pseudo_tmp;
-        header("location:page_admi.php");
+        header("location:../admin_panel/admin_page.php");
 
     }
 }

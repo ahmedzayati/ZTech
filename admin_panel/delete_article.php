@@ -2,14 +2,14 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="style_daw.css" />
-      <link href="themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="../style_daw.css" />
+      <link href="../themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
       <title>site1</title>
 
    </head>
@@ -17,10 +17,10 @@
       <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="accueil.php" style="color: #007bff;">ZAYATECH</a>
+            <a class="navbar-brand" href="../user_panel/home_page.php" style="color: #007bff;">ZAYATECH</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                <li class="nav-item active">
-                  <a class="nav-link" href="accueil.php">Home </a>
+                  <a class="nav-link" href="../user_panel/home_page.php">Home </a>
                </li>
             </ul>
             <ul class="navbar-nav">
@@ -74,11 +74,11 @@
                   </div>
                </li>
                <li>
-                  <button class="btn btn-primary"  style="height: 25px;" ><a href="msgg.php" style="position: relative;bottom: 7px;color: white">Messages reçus</a></button>
+                  <button class="btn btn-primary"  style="height: 25px;" ><a href="show_message.php" style="position: relative;bottom: 7px;color: white">Messages reçus</a></button>
                </li>
                
                <li>
-                  <button class="btn btn-primary"  style="height: 25px; margin-left: 6px;" ><a href="maj.php" style="position: relative;bottom: 7px;color: white">Mise à jour produit</a></button>
+                  <button class="btn btn-primary"  style="height: 25px; margin-left: 6px;" ><a href="update_article.php" style="position: relative;bottom: 7px;color: white">Mise à jour produit</a></button>
                </li>
                <li>
                   <button class="btn btn-primary"  style="height: 25px; margin-left: 6px;" ><a href="logout.php" style="position: relative;bottom: 7px;color: white">Logout</a></button>
@@ -126,7 +126,7 @@
                      
                   </form>
                   <br><br>
-                  <a href="tt_supprimer.php" class="btn btn-danger">supprimer tous les produits</a>
+                  <a href="delete_all.php" class="btn btn-danger">supprimer tous les produits</a>
                </div>
              
                <div class="col-md-3  ">
@@ -140,9 +140,9 @@
          </center>
          <br>
       </div>
-      <?php include("footer.php"); ?>
-      <script src="js/jquery.js"></script>
-      <script src="js/bootstrap.min.js"></script>
+      <?php include("../user_panel/footer.php"); ?>
+      <script src="../js/jquery.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
    </body>
    <script>
       var modal1 = document.getElementById("id03");
