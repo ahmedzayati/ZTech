@@ -26,10 +26,17 @@ header( 'Content-Type: text/html; charset=utf-8' );
       <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+<<<<<<< HEAD
             <a class="navbar-brand" href="../user_panel/home_page.php" style="color: #007bff;">ZAYATECH</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                <li class="nav-item active">
                   <a class="nav-link" href="../user_panel/home_page.php">Home </a>
+=======
+            <a class="navbar-brand" href="home_page.php" style="color: #007bff;">ZAYATECH</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item active">
+                  <a class="nav-link" href="home_page.php">Home </a>
+>>>>>>> 6b31d3130a4da1fa5b9ea3f226160cbc9fb508c2
                </li>
             </ul>
             <ul class="navbar-nav">
@@ -144,7 +151,11 @@ header( 'Content-Type: text/html; charset=utf-8' );
          <br>
       </div>
       </div>
+<<<<<<< HEAD
       <?php include("../user_panel/footer.php"); ?>
+=======
+      <?php include("footer.php"); ?>
+>>>>>>> 6b31d3130a4da1fa5b9ea3f226160cbc9fb508c2
       <script src="../js/jquery.js"></script>
       <script src="../js/bootstrap.min.js"></script>
    </body>
