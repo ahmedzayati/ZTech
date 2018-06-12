@@ -77,7 +77,7 @@
               <button onclick="document.getElementById('id03').style.display='block'" class="btn btn-primary" id="sign" style="height: 25px;" ><p style="position: relative;bottom: 7px;">contact</p></button>
               <div id="id03" class="modal" >
                 <span onclick="document.getElementById('id03').style.display='none'" >&times;</span>
-                <form class="modal-content animate" action="envoyer.php" method="POST" style="padding: 10px;">
+                <form class="modal-content animate" action="../admin_panel/senf_message.php" method="POST" style="padding: 10px;">
                   <div class="form-row" >
                     <div class="form-group col-md-6" >
                     <label for="email" >Email</label>
@@ -109,7 +109,7 @@
               <button onclick="document.getElementById('id04').style.display='block'" class="btn btn-primary" id="sign" style="height: 25px;" ><p style="position: relative;bottom: 7px;">About</p></button>
               <div id="id04" class="modal" >
                 <span onclick="document.getElementById('id04').style.display='none'" >&times;</span>
-                <form class="modal-content animate" action="envoyer.php" method="POST" style="padding: 10px;">
+                <form class="modal-content animate"  style="padding: 10px;">
                   <div class="form-row" >
                     <p> Notre site vous offre différents produits informatiques de trés bonne qualité  </p>
                 </form>

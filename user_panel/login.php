@@ -7,7 +7,7 @@ if(isset($_POST['pass'])){
     $result = $bdd->query($query); 
     $row=$result->fetch();
     if ($row['pass']!=$pass_tmp  || $row['pseudo']!=$pseudo_tmp) {
-    	echo "<script>alert('erreur');window.location.replace('accueil.php');</script>";
+    	echo "<script>alert('erreur');window.location.replace('home_page.php');</script>";
     }
     else
     {
